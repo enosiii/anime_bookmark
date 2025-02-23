@@ -1,7 +1,7 @@
 {
-    "id": "anime-bookmark-pwa-v2",
-    "short_name": "Anime Bookmark V2",
-    "name": "Anime Bookmark Version 2",
+    "id": "anime-bookmark-pwa-v3",
+    "short_name": "Anime Bookmark V3",
+    "name": "Anime Bookmark Version 3",
     "icons": [
         {
             "src": "../abm192.png",
@@ -14,7 +14,7 @@
             "type": "image/png"
         }
     ],
-    "start_url": "../anime-bookmark/index.html",
+    "start_url": "../anime_bookmark/anime-bookmark/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
