@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" type="image/png" href="../abm192.png">
-    <title>Anime Bookmark</title>
+    <title>Anime Bookmark V2</title>
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="../checkbox.css">
     <link rel="manifest" href="../manifest.json">
@@ -15,7 +15,7 @@
         <h1>
         <img src="../abm192.png" style="width: 80px; height: 80px;">
           <br>
-         Anime Bookmark</h1>
+         Anime Bookmark V2</h1>
       
       <hr>
       
@@ -46,7 +46,7 @@
     <script>
         if ('serviceWorker' in navigator) {
             window.addEventListener('load', function() {
-                navigator.serviceWorker.register('../service-worker.js').then(function(registration) {
+                navigator.serviceWorker.register('../service-worker.js?v=2').then(function(registration) {
                     console.log('ServiceWorker registration successful with scope: ', registration.scope);
                 }, function(err) {
                     console.log('ServiceWorker registration failed: ', err);
