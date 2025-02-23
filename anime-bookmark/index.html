@@ -11,36 +11,28 @@
 </head>
 <body>
     <div class="container">
-      
         <h1>
-        <img src="../abm192.png" style="width: 80px; height: 80px;">
-          <br>
-         Anime Bookmark V2</h1>
-      
-      <hr>
-      
+            <img src="../abm192.png" style="width: 80px; height: 80px;">
+            <br>
+            Anime Bookmark V2
+        </h1>
+        <hr>
         <div id="anime-list" class="anime-list"></div>
-      
-      <hr>
-      
+        <hr>
         <div class="action-buttons">
             <button id="add-button">Add</button>
             <button id="delete-button">Delete</button>
         </div>
-
         <div id="add-container" class="add-container hidden">
             <input type="number" id="anime-id" placeholder="Enter Anime ID">
             <input type="text" id="anime-title" placeholder="Enter Anime Title">
             <button id="submit-button">Submit</button>
             <p id="notification" class="hidden"></p>
         </div>
-      
         <div id="delete-container" class="delete-container hidden">
             <div id="delete-list"></div>
             <button id="confirm-delete">Delete</button>
         </div>
-
-
     </div>
     <script src="../script.js"></script>
     <script>
