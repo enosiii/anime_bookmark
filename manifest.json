@@ -1,0 +1,22 @@
+// anime_bookmark/manifest.json
+{
+    "id": "anime-bookmark-pwa",
+    "short_name": "Anime Bookmark",
+    "name": "Anime Bookmark",
+    "icons": [
+        {
+            "src": "abm192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "abm512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ],
+    "start_url": "/anime-bookmark/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff"
+}
