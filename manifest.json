@@ -14,9 +14,9 @@
             "type": "image/png"
         }
     ],
-    "start_url": "/anime-bookmark/index.html?v=2",
+    "start_url": "../anime-bookmark/index.html",
     "display": "standalone",
     "background_color": "#ffffff",
     "theme_color": "#ffffff",
-    "scope": "/anime_bookmark/"
+    "scope": "../anime_bookmark/"
 }
