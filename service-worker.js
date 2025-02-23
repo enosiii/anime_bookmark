@@ -1,13 +1,12 @@
-// anime_bookmark/service-worker.js
-const CACHE_NAME = 'unique-anime-bookmark-cache-v1';
+const CACHE_NAME = 'anime-bookmark-cache-v2';
 const urlsToCache = [
-    '/anime-bookmark/',
-    '/anime-bookmark/index.html',
-    '/styles.css',
-    '/script.js',
-    '/checkbox.css',
-    '/abm192.png',
-    '/abm512.png'
+    '/anime_bookmark/anime-bookmark/',
+    '/anime_bookmark/anime-bookmark/index.html',
+    '/anime_bookmark/styles.css',
+    '/anime_bookmark/script.js',
+    '/anime_bookmark/checkbox.css',
+    '/anime_bookmark/abm192.png',
+    '/anime_bookmark/abm512.png'
 ];
 
 self.addEventListener('install', event => {
@@ -32,4 +31,13 @@ self.addEventListener('fetch', event => {
     );
 });
 
-
+self.addEventListener('activate', event => {
+    event.waitUntil(
+        caches.keys().then(cacheNames => {
+            return Promise.all(
+                cacheNames.filter(cache => cache !== CACHE_NAME)
+                          .map(cache => caches.delete(cache))
+            );
+        })
+    );
+});
