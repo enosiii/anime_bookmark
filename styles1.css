@@ -228,7 +228,6 @@ h1 {
     }
 
     .add-container input, .delete-container input {
-        padding: 10px; /* Double the padding */
         font-size: 1.5em; /* Increase font size */
     }
 
@@ -240,16 +239,14 @@ h1 {
 
 
     .delete-list-item input[type="checkbox"] {
-        width: 8%; /* Adjust checkbox size */
-        height: 8%; /* Adjust checkbox size */
+        width: 4%; /* Adjust checkbox size */
+        height: 4%; /* Adjust checkbox size */
     }
 
 
-.delete-list-item::after {
-    
-    width: 78%;
-    
-}
+    .delete-list-item::after {
+        width: 78%;
+    }
 
     .delete-list-item label {
         font-size: 1.5em; /* Increase font size */
