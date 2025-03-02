@@ -204,56 +204,40 @@ h1 {
 /* PC mode styles */
 @media (min-width: 768px) {
     body {
-        font-size: 2em; /* Double the font size */
+        font-size: 1.5em; /* Double the font size */
     }
 
     .container {
-        padding: 40px; /* Double the padding */
+       /*  padding: 40px; Double the padding */
     }
 
     h1 {
-        font-size: 2em; /* Double the font size */
+        font-size: 1.5em; /* Double the font size */
     }
 
     .anime-button {
-        padding: 20px 40px; /* Double the padding */
-        font-size: 1.5em; /* Increase font size */
+        
+        font-size: 1em; /* Increase font size */
         border-radius: 15px;
     }
 
     .action-buttons button {
-        padding: 20px 40px; /* Double the padding */
-        font-size: 1.5em; /* Increase font size */
+        
+        font-size: 1em; /* Increase font size */
         border-radius: 15px;
     }
 
     .add-container input, .delete-container input {
-        font-size: 1.5em; /* Increase font size */
+        font-size: 1em; /* Increase font size */
     }
 
     #submit-button, #confirm-delete {
         padding: 20px 40px; /* Double the padding */
-        font-size: 1.5em; /* Increase font size */
+        font-size: 1em; /* Increase font size */
         border-radius: 15px;
     }
 
-
-    .delete-list-item input[type="checkbox"] {
-        width: 4%; /* Adjust checkbox size */
-        height: 4%; /* Adjust checkbox size */
-    }
-
-
-    .delete-list-item::after {
-        width: 78%;
-    }
-
-    .delete-list-item label {
-        font-size: 1.5em; /* Increase font size */
-        max-width: 70%;
-    }
-
     #notification {
-        font-size: 1.5em; /* Increase font size */
+        font-size: 1em; /* Increase font size */
     }
 }
