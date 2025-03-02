@@ -1,7 +1,7 @@
 {
     "id": "anime-bookmark-pwa-v5",
     "short_name": "Anime Bookmark",
-    "name": "Anime Bookmark Version 4",
+    "name": "Anime Bookmark Version 5",
     "icons": [
         {
             "src": "../anime_bookmark/abm192.png",
