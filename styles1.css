@@ -133,7 +133,8 @@ h1 {
 .delete-list-item input[type="checkbox"] {
     width: 4%;
     height: 4%;
-    margin-right: 2%;
+    margin-right: 1%;
+    margin-left: 1%;
     flex-shrink: 0;
 }
 
