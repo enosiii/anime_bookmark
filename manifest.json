@@ -1,7 +1,7 @@
 {
-    "id": "anime-bookmark-pwa-v3",
-    "short_name": "Anime Bookmark V3",
-    "name": "Anime Bookmark Version 3",
+    "id": "anime-bookmark-pwa-v4",
+    "short_name": "Anime Bookmark",
+    "name": "Anime Bookmark Version 4",
     "icons": [
         {
             "src": "../abm192.png",
