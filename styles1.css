@@ -218,29 +218,29 @@ h1 {
     .anime-button {
         padding: 20px 40px; /* Double the padding */
         font-size: 1.5em; /* Increase font size */
+        border-radius: 15px;
     }
 
     .action-buttons button {
         padding: 20px 40px; /* Double the padding */
         font-size: 1.5em; /* Increase font size */
+        border-radius: 15px;
     }
 
     .add-container input, .delete-container input {
-        padding: 20px; /* Double the padding */
+        padding: 10px; /* Double the padding */
         font-size: 1.5em; /* Increase font size */
     }
 
     #submit-button, #confirm-delete {
         padding: 20px 40px; /* Double the padding */
         font-size: 1.5em; /* Increase font size */
+        border-radius: 15px;
     }
 
-    .delete-list-item {
-        padding: 10px 0; /* Double the padding */
-    }
 
     .delete-list-item input[type="checkbox"] {
-        width: 8%; /* Adjust checkbox size */
+        width: 4%; /* Adjust checkbox size */
         height: 8%; /* Adjust checkbox size */
     }
 
