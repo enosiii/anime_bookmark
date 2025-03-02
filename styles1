@@ -1,0 +1,240 @@
+/* Mobile styles (default) */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.anime-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    justify-content: center;
+}
+
+.anime-button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    text-transform: capitalize;
+    text-align: center;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    flex: 1 1 48%;
+    max-width: 100%;
+}
+
+.anime-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+
+.anime-button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.delete-container, .add-container {
+    align-items: flex-start;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%;
+}
+
+.action-buttons button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #28a745;
+    color: white;
+    width: 48%;
+}
+
+.action-buttons button#delete-button {
+    background-color: #dc3545;
+}
+
+.add-container, .delete-container {
+    margin-top: 4%;
+    align-items: center;
+}
+
+.add-container input, .delete-container input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 2%;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#notification {
+    color: green;
+    text-align: center;
+}
+
+.delete-list-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    left: 9%;
+    width: 100%;
+    padding: 5px 0;
+    position: relative;
+}
+
+.delete-list-item::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    width: 82%;
+    height: 1px;
+    background-color: #ddd;
+}
+
+.delete-list-item input[type="checkbox"] {
+    width: 4%;
+    height: 4%;
+    margin-right: 2%;
+    flex-shrink: 0;
+}
+
+.delete-list-item label {
+    flex-grow: 1;
+    flex-basis: 0;
+    max-width: 75%;
+    text-align: left;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.add-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#submit-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#submit-button:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+#submit-button:active {
+    transform: translateY(0);
+}
+
+.delete-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+#confirm-delete {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.2s, transform 0.2s;
+}
+
+#confirm-delete:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+#confirm-delete:active {
+    transform: translateY(0);
+}
+
+/* PC mode styles */
+@media (min-width: 768px) {
+    .container {
+        width: 60%;
+        max-width: 800px;
+    }
+
+    .anime-list {
+        gap: 2%;
+    }
+
+    .anime-button {
+        flex: 1 1 23%; /* Adjust for 4 buttons per row */
+        max-width: 23%;
+    }
+
+    .action-buttons button {
+        width: 30%;
+    }
+
+    .add-container input, .delete-container input {
+        width: 70%;
+    }
+
+    .delete-list-item {
+        left: 15%;
+    }
+
+    .delete-list-item::after {
+        width: 70%;
+    }
+
+    .delete-list-item input[type="checkbox"] {
+        width: 3%;
+        height: 3%;
+    }
+
+    .delete-list-item label {
+        max-width: 65%;
+    }
+}
