@@ -240,12 +240,20 @@ h1 {
 
 
     .delete-list-item input[type="checkbox"] {
-        width: 4%; /* Adjust checkbox size */
+        width: 8%; /* Adjust checkbox size */
         height: 8%; /* Adjust checkbox size */
     }
 
+
+.delete-list-item::after {
+    
+    width: 78%;
+    
+}
+
     .delete-list-item label {
         font-size: 1.5em; /* Increase font size */
+        max-width: 70%;
     }
 
     #notification {
