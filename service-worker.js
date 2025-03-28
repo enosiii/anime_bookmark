@@ -1,4 +1,4 @@
-const CACHE_NAME = 'anime-bookmark-cache-v2';
+const CACHE_NAME = 'anime-bookmark-cache-v3';
 const urlsToCache = [
     '/anime_bookmark/anime-bookmark/',
     '/anime_bookmark/anime-bookmark/index.html',
