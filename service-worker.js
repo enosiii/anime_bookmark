@@ -4,6 +4,7 @@ const urlsToCache = [
     '/anime_bookmark/anime-bookmark/index.html',
     '/anime_bookmark/styles.css',
     '/anime_bookmark/styles1.css',
+    '/anime_bookmark/styles2.css',
     '/anime_bookmark/script.js',
     '/anime_bookmark/checkbox.css',
     '/anime_bookmark/abm192.png',
