@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const button = document.createElement('button');
             button.className = 'anime-button';
             button.textContent = anime.title;
-            button.onclick = () => window.open(`https://animepahe.ru/a/${anime.id}`, '_blank');
+            button.onclick = () => window.open(`https://animepahe.si/a/${anime.id}`, '_blank');
             animeList.appendChild(button);
         });
     }
